@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "elytra_bouncer",
+  "version": "${version}",
+  "name": "Elytra Bouncer",
+  "description": "Automatically taps the jump input to assist elytra bouncing.",
+  "authors": [
+    "Wayne"
+  ],
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.elytrabouncer.ElytraBouncerClient"
+    ],
+    "modmenu": [
+      "dev.elytrabouncer.ElytraBouncerModMenu"
+    ]
+  },
+  "mixins": [
+    "elytrabouncer.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}",
+    "java": ">=21",
+    "fabric-api": ">=${fabric_version}"
+  },
+  "suggests": {
+    "modmenu": ">=17.0.0"
+  }
+}
